@@ -22,7 +22,14 @@
     box-sizing: border-box;
     height: 33vh;
     background-color: grey;
-    padding: 2%;
+    padding: 5%;
+    display: flex;
+
+    justify-content:center;
+    align-items: center;
+
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .sec-2{
