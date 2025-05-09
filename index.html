@@ -10,9 +10,11 @@
     <div class="container">
         <div class="odin-bg"></div>
         <div class="main">
-            <div class="sec-1"></div>
+            <div class="sec-1">
+                <span>This is not a real online service! You know you need something like this in you life to help you realize your deepest dreams.<br>Sign up now to get started.<br><br>You know you want to.</span>
+            </div>
             <div class="sec-2">
-                <form action="post">
+                <form action="" method ="get" id="top-form">
                     <legend>Let's do this!</legend>
                     <div class="form-sec">
                         <div class="col">
@@ -26,7 +28,7 @@
                             </div>                        
                             <div class="inputs">
                                 <label for="pw">PASSWORD</label>
-                                <input type="text" id="pw" name="password">
+                                <input type="password" id="pw" name="password">
                             </div>
                         </div>
                         <div class="col">
@@ -40,7 +42,7 @@
                             </div>
                             <div class="inputs">
                                 <label for="confirm-pw">CONFIRM PASSWORD</label>
-                                <input type="text" id="confirm-pw" name="confirm-password">
+                                <input type="password" id="confirm-pw" name="confirm-password">
                             </div>
                             
                         </div>
@@ -48,7 +50,9 @@
                     
                 </form>
             </div>
-            <div class="sec-3"></div>
+            <div class="sec-3">
+                <button type="submit" form="top-form" value="Submit">Submit</button>
+            </div>
         </div>
     </div>
 </body>
