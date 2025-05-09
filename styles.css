@@ -1,45 +1,81 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('font/Norse-Bold.woff2') format('woff2'),
+        url('font/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:500;
 }
+
 .container{
     display: flex;
     flex-direction: row;
 }
 
 .odin-bg{
-    width: 33vw;
+    width: 34%;
     background-image: url("bg-image.jpg");
     height: 100vh; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat;
     background-size: 100vh;
+}
 
+.upper-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 33vh;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0 0 0 / 0.5);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.banner>span{
+    font-family: 'Norse',sans-serif;
+    font-size: 90px;
+    color: white;
+}
+
+#logo{
+    height:90px;
 }
 
 .main{
-    width: 66vw;
+    width: 66%;
 }
 
 .sec-1{
     box-sizing: border-box;
     height: 33vh;
     background-color: rgb(239, 239, 239);
-    padding: 5%;
+    padding: 35px;
     display: flex;
 
     justify-content:center;
     align-items: center;
+}
 
+.sec-1>span{
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
 }
 
 .sec-2{
     box-sizing: border-box;
     height:34vh;
-    padding: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 35px;
     box-shadow: 0px 2px 2px 1px rgb(189, 189, 189);
     
 }
@@ -63,37 +99,34 @@ form{
 }
 
 label{
-    font-size: 8px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+legend{
+    padding-bottom: 5px;
 }
 
 .inputs{
     display: flex;
     flex-direction: column;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 5px;
 }
-
-/* .inputs:last-child{
-    padding-bottom: 5%;
-}
-
-.inputs:first-child{
-    padding-top: 5%;
-} */
 
 input{
     width: 80%;
+    height: 20px;
 }
 
+input:focus{
+    box-shadow: 2px 2px 2px 1px rgb(189, 189, 189);
+    outline: 1px solid #4a6ed6;
+    border: none;
+    border-radius: 1px;
+    outline-color: blue;
+}
 
 input:invalid{
     border: red solid;
-    border-radius: 3px;
-}
-
-input:valid{
-    border: green solid;
     border-radius: 3px;
 }
 
@@ -101,7 +134,7 @@ input:valid{
     box-sizing: border-box;
     height: 33vh;
     background-color: rgb(239, 239, 239);
-    padding: 2%;
+    padding: 35px;
     display: flex;
     flex-direction: column;
     z-index: -1;
