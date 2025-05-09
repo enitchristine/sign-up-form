@@ -1,0 +1,85 @@
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.odin-bg{
+    width: 33vw;
+    background-image: url("bg-image.jpg");
+    height: 100vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    background-size: 100vh;
+
+}
+
+.main{
+    width: 66vw;
+}
+
+.sec-1{
+    box-sizing: border-box;
+    height: 33vh;
+    background-color: grey;
+    padding: 2%;
+}
+
+.sec-2{
+    box-sizing: border-box;
+    height:34vh;
+    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+form{
+    height: 100%;
+}
+
+.form-sec{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.col{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+label{
+    font-size: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/* .inputs:last-child{
+    padding-bottom: 5%;
+}
+
+.inputs:first-child{
+    padding-top: 5%;
+} */
+
+input{
+    width: 80%;
+    
+}
+
+.sec-3{
+    box-sizing: border-box;
+    height: 33vh;
+    background-color: grey;
+    padding: 2%;
+}
+
